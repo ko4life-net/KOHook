@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="GameUtils.cpp" />
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_base.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_device.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_index_buffer.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_surface.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_swap_chain.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_texture.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_vertex_buffer.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8to9_volume.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\d3d8types.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\d3d8to9\source\interface_query.cpp">
+      <Filter>d3d8to9</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>imgui\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>imgui\backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="App.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="GameUtils.h" />
+    <ClInclude Include="..\thirdparty\d3d8to9\source\interface_query.hpp">
+      <Filter>d3d8to9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\d3d8to9\source\d3d8.hpp">
+      <Filter>d3d8to9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\d3d8to9\source\d3d8to9.hpp">
+      <Filter>d3d8to9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\d3d8to9\source\d3d8types.hpp">
+      <Filter>d3d8to9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\d3d8to9\source\d3dx9.hpp">
+      <Filter>d3d8to9</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\backends\imgui_impl_dx9.h">
+      <Filter>imgui\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\backends\imgui_impl_win32.h">
+      <Filter>imgui\backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="Resources\fonts\IconsFontAwesome5.h">
+      <Filter>imgui\custom</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="d3d8to9">
+      <UniqueIdentifier>{5fdc832f-fad9-4518-ad49-c03fb6b8246c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{6ea5f9fc-dd53-4c7c-b136-edd0f4897da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\backend">
+      <UniqueIdentifier>{21a97048-fa90-48ea-b4a4-a7f87a2730ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\custom">
+      <UniqueIdentifier>{3d4dc552-c61b-4e5d-9966-c7a0d3d5a994}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

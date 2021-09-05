@@ -1,8 +1,10 @@
 #pragma once
 #pragma warning(disable : 26812) // enum class
 
-#include "Types.h"
 #include <vector>
+
+typedef unsigned char byte_t;
+typedef unsigned long offset_t;
 
 class Hook
 {

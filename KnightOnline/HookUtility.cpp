@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "HookUtility.h"
 
-void Hook::PatchBytes(offset_t address, const std::vector<byte_t> & bytes)
+void Hook::PatchMemory(offset_t address, const std::vector<byte_t> & bytes)
 {
     offset_t protectOld, protectNew;
     auto     hook = reinterpret_cast<void *>(address);
@@ -13,7 +13,7 @@ void Hook::PatchBytes(offset_t address, const std::vector<byte_t> & bytes)
 void Hook::PatchFill(offset_t address, byte_t value, uint32_t size)
 {
     std::vector<byte_t> bytes(size, value);
-    PatchBytes(address, bytes);
+    PatchMemory(address, bytes);
 }
 
 void Hook::PatchDetour(offset_t address, void * callback, Opcode type /*= Opcode::JMP*/)
@@ -23,5 +23,5 @@ void Hook::PatchDetour(offset_t address, void * callback, Opcode type /*= Opcode
     std::vector<byte_t> bytes(5, 0);
     bytes[0] = type;
     *reinterpret_cast<offset_t *>(&bytes[1]) = reinterpret_cast<offset_t>(callback) - address - bytes.size();
-    PatchBytes(address, bytes);
+    PatchMemory(address, bytes);
 }
